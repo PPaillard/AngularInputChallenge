@@ -1,0 +1,11 @@
+<main>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Superman_S_symbol.svg/1853px-Superman_S_symbol.svg.png" alt="">
+    <div>Nom : {{developer.lastName}}</div>
+    <div>Prénom : {{developer.firstName}}</div>
+    <div>Âge : {{developer.age}}</div>
+    <div>Sexe : {{developer.sexe}}</div>
+    <div>Bio : {{developer.bio}}</div>
+    <div *ngFor="let val of developer.skills">
+        <app-skill [skill]="val"></app-skill>
+    </div>
+</main>
